@@ -10,6 +10,7 @@ import Tweet from './Tweet';
 import MyIcon from './MyIcon';
 import Contain_Tweet from './Contain_Tweet';
 import Trend_Tweet from './Trend_Tweet';
+import Objet from './Objet';
 function App() {
   const [count, setCount] = useState(0);
   const object = [
@@ -158,7 +159,7 @@ function App() {
         />
         <Input_Tweet styleName="flex border-b ">
           <div>
-            <div className="flex ">
+            <div className="flex">
               <img
                 src="src/assets/Profile-Photo.svg"
                 styleName="w-10 h-10"
@@ -197,18 +198,12 @@ function App() {
         </div>
         <div className="flex gap-[40%]">
           <p className="pt-4">Trends for you</p>
-          <Icon src="src/assets/Settings.svg" className="" />
+          <Icon src="src/assets/Settings.svg" className=""/>
         </div>
         <div>
-        <Trend_Tweet text=""/>
         <Trend_Tweet text="#SQUID"/>
         <Trend_Tweet text="Gra'Nzumba"/>
         <Trend_Tweet text="Top-Congo"/>
-        <Trend_Tweet src="Tweet/Body/Snapchat-411377971.jpg"/>
-
-          {/* // 
-          // className="@nytimes" */}
-          
         </div>
       </div>
     </div>

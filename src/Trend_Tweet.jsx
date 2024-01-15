@@ -9,7 +9,7 @@ export default function Trend_Tweet(props) {
             <small className={props.small}>2,066 Tweets</small>
           </div>
           <div>
-            <img src={props.scr} alt="" />
+            <img src={props.scr}/>
           </div>
         </div>
       </div>

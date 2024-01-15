@@ -1,7 +1,5 @@
-import Objet from './Objet';
-
 export default function Objet() {
-  const object = [
+  const object = 
     {
       author_avatar: 'https://picsum.photos/200?random=1604231375000',
       source: 'Twitter for iPhone',
@@ -13,6 +11,9 @@ export default function Objet() {
       retweets: '22972',
       text: 'When I originally became your all time favorite President, the Great State of Michigan was hemorrhaging car companies and jobs. Plants were closing and moving to Mexico, and other places. No new plants for decades. I stopped the moves, &amp; now many plants are and have been built...',
       image: 'https://picsum.photos/200/800?random=1322868385361891328',
-    },
-  ];
+    }
+
+    return
+  
 }
+
