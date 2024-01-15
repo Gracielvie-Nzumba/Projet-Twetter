@@ -150,15 +150,15 @@ function App() {
           <Button className={'button'} type="text" name="Tweet" />
         </div>
       </div>
-      <div className="w-2/5  ">
+      <div className="w-2/5 border">
         <Header
           title="Home"
           src="src/assets/Timeline-Prop.svg"
-          styleName="flex justify-between flex-row"
+          styleName="flex justify-between flex-row border-b"
         />
-        <Input_Tweet styleName="flex">
+        <Input_Tweet styleName="flex border-b ">
           <div>
-            <div className="flex">
+            <div className="flex ">
               <img
                 src="src/assets/Profile-Photo.svg"
                 styleName="w-10 h-10"
@@ -200,7 +200,15 @@ function App() {
           <Icon src="src/assets/Settings.svg" className="" />
         </div>
         <div>
-          <Trend_Tweet small="" />
+        <Trend_Tweet text=""/>
+        <Trend_Tweet text="#SQUID"/>
+        <Trend_Tweet text="Gra'Nzumba"/>
+        <Trend_Tweet text="Top-Congo"/>
+        <Trend_Tweet src="Tweet/Body/Snapchat-411377971.jpg"/>
+
+          {/* // 
+          // className="@nytimes" */}
+          
         </div>
       </div>
     </div>
