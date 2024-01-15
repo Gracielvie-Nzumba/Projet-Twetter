@@ -1,0 +1,21 @@
+.button{
+    background-color: rgb(27, 145, 225);
+    width: 100px;
+    border-radius: 30px;
+
+}
+textarea{
+    background-color: black;
+}
+input{
+    background-color: rgb(51, 50, 50);
+    border-radius:30px ;
+}
+small{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: grey;
+}
+.show_m{
+    color: rgb(7, 103, 193);
+    font-size: bold;
+}
