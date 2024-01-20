@@ -8,7 +8,6 @@ textarea{
     background-color: black;
 }
 input{
-    background-color: rgb(51, 50, 50);
     border-radius:30px ;
 }
 small{
@@ -20,5 +19,29 @@ small{
     font-size: bold;
 }
 h3{
+    font-size: bold;
+}
+.btn{
+    background-color: white;
+    border-radius: 10px;
+    width: 150%;
+    height: auto;
+}
+.trend{
+    border-radius: 10px;
+    width: 150%;
+    margin-top: 10px;
+    height: 20rem;
+}
+.follow{
+    border-radius: 10px;
+    width: 150%;
+    margin-top: 10px;
+    height: 20rem;
+}
+.trend_follow{
+    padding-left: 20px;
+}
+.who_tofollow{
     font-size: bold;
 }
