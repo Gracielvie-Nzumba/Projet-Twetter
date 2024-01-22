@@ -4,9 +4,6 @@ import Button from './Button';
 export default function Follow(props) {
   return (
     <>
-      {/* <div className='who_tofollo'>
-        <p>Who to follow</p>
-      </div> */}
       <h2>{props.name}</h2>
       <div className="flex gap-4 p-2">
         <img
@@ -14,7 +11,7 @@ export default function Follow(props) {
           src="Tweet/Body/Snapchat-411377971.jpg"
           alt=""
         />
-        <div className="flex gap-2">
+        <div className="flex gap-[90%]">
           <div className={props.names}>
             <div className="flex gap-1">
               <p className="pt-4">Gracielvie'N</p>
@@ -22,8 +19,8 @@ export default function Follow(props) {
             </div>
             <small>@nytimes</small>
           </div>
-          <div className=''>
-          <button className='btn mt-4 text-black ml-4'>Follow</button>
+          <div className='mt-6'>
+          <button className='btn  text-black '>Follow</button>
           </div>
         </div>
       </div>
