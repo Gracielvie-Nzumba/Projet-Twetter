@@ -11,7 +11,7 @@ export default function Follow(props) {
           src="Tweet/Body/Snapchat-411377971.jpg"
           alt=""
         />
-        <div className="flex gap-[90%]">
+        <div className="flex gap-[40%]">
           <div className={props.names}>
             <div className="flex gap-1">
               <p className="pt-4">Gracielvie'N</p>

@@ -1,4 +1,4 @@
-export default function Tweet(array) {
+export default function Tweet({unTweet}) {
 
   const objet =  {
     author_avatar: 'https://picsum.photos/200?random=1609942590000',
@@ -18,18 +18,23 @@ export default function Tweet(array) {
 
     <div className="flex gap-4">
       <div>
-        <img src= {array.author_avatar} className="w-14 h-14 rounded-full"/>
+        <img src= {unTweet.author_avatar} className="rounded-full w-10 h-10"/>
       </div>
       <div className=" ml-4 mt-4">
         <div className="flex pb-6">
-          <h2 className="font-bold">{array.source}</h2>
+          <h2 className="font-bold">{unTweet.source}</h2>
           <img src="src/assets/Verified.svg" alt="" className="w-7 h-7"/>
         </div>
-        <p>{array.text}</p>
-        <img  src = {array.image} className="w-full rounded-3xl object-cover h-60 "/>
-        <div className="flex gap-8 pb-7 pt-7">
-          <img src="src/assets/Reply.svg" alt="" />
-          <span>0</span>
+        <p>{unTweet.text}</p>
+        {
+          unTweet.image && <img  src = {unTweet.image} className="w-full rounded-3xl object-cover h-60 "/>
+
+        }
+        <div className="flex gap-10 pb-7 pt-7 ">
+          <div className="">
+          <img src="src/assets/Reply.svg" alt=""/>
+          </div>
+          <span className="">0</span>
           <img src="src/assets/Retweet.svg" alt="" />
           <span>0</span>
           <img src="src/assets/React.svg" alt="" />

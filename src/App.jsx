@@ -1,3 +1,9 @@
+import {
+  BrowserRouter as Route,
+  Routes,
+  Link,
+  BrowserRouter,
+} from 'react-router-dom';
 import { useState } from 'react';
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
@@ -8,7 +14,6 @@ import Icon from './Incon';
 import Button from './Button';
 import Tweet from './Tweet';
 import MyIcon from './MyIcon';
-// import Contain_Tweet from './Contain_Tweet';
 import Trend_Tweet from './Trend_Tweet';
 import Follow from './Follow';
 function App() {
@@ -165,20 +170,24 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="w-5/12 border border-slate-800 ">
+      <div className="w-4/12 border border-slate-800 ">
         <Header
           title="Home"
           src="src/assets/Timeline-Prop.svg"
-          styleName="flex justify-between flex-row border-b"
+          styleName="flex justify-between flex-row border-b "
         />
         <div styleName="flex border-b border-t border-slate-800 ">
+          <Routes>
+            <Route path="/" element={<Tweet />}></Route>
+            <Route path="Profil" element={<TweetProfil />}></Route>{' '}
+          </Routes>
           <div className="flex flex-row">
             <img
               className="mb-10"
               src="src/assets/Profile-Photo.svg"
               styleName="w-10 h-10 "
             />
-            <div className="flex flex-col ">
+            <div className="flex flex-col">
               <textarea
                 id="#"
                 cols="35"
@@ -203,12 +212,12 @@ function App() {
 
         <div>
           {array.map((arry) => (
-            <Tweet objet={arry} />
+            <Tweet unTweet={arry} />
           ))}
         </div>
       </div>
-      <div className="trend_follow w-3/12">
-        <div className='sticky left-0 top-1 et right-0'>
+      <div className="trend_follow w-2/12">
+        <div className="sticky left-0 top-1 et right-0">
           <div className="flex bg-gray-800 rounded-lg pl-4 gap-4">
             <img src="src/assets/Search.svg" alt="#" />
             <input
@@ -242,5 +251,24 @@ function App() {
     </div>
   );
 }
+
+// const Home = () => {
+//   return (
+//     <div>
+//       <h1>Home</h1>
+//       <Link to="Profil">Profil</Link>
+//     </div>
+//   );
+// };
+
+//  const Profil = () => {
+//   return (
+//     <div>
+//       <h1>Profil</h1>
+//     </div>
+//   );
+// };
+
+//
 
 export default App;
