@@ -1,4 +1,4 @@
-import Icon from './Incon';
+import Icon from './Icon';
 import Tweet from './Tweet';
 import Button from './Button';
 export default function Follow(props) {

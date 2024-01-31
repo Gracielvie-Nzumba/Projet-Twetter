@@ -1,21 +1,17 @@
-import {
-  BrowserRouter as Route,
-  Routes,
-  Link,
-  BrowserRouter,
-} from 'react-router-dom';
+import { BrowserRouter as Route, Routes, Link } from 'react-router-dom';
 import { useState } from 'react';
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
 import Header from './Header';
 import Input_Tweet from './Input_Tweet';
-import Icon from './Incon';
+import Icon from './Icon';
 import Button from './Button';
 import Tweet from './Tweet';
 import MyIcon from './MyIcon';
 import Trend_Tweet from './Trend_Tweet';
 import Follow from './Follow';
+// import Profil from './Profil';
 function App() {
   const [count, setCount] = useState(0);
   const array = [
@@ -147,13 +143,17 @@ function App() {
               text="Home"
               styleName="display gap-10 flex"
             />
-            <Icon src="src/assets/Explore.svg" text="Explore" />
-            <Icon src="src/assets/Notifications.svg" text="Notification" />
-            <Icon src="src/assets/Messages.svg" text="Message" />
-            <Icon src="src/assets/Bookmarks.svg" text="Bookmarks" />
-            <Icon src="src/assets/Lists.svg" text="Lists" />
-            <Icon src="src/assets/Profile.svg" text="Profil" />
-            <Icon src="src/assets/More.svg" text="More" />
+            <Icon icon="/" src="src/assets/Explore.svg" text="Explore" />
+            <Icon
+              icon="/"
+              src="src/assets/Notifications.svg"
+              text="Notification"
+            />
+            <Icon icon="/" src="src/assets/Messages.svg" text="Message" />
+            <Icon icon="/" src="src/assets/Bookmarks.svg" text="Bookmarks" />
+            <Icon icon="/" src="src/assets/Lists.svg" text="Lists" />
+            <Icon icon="/" src="src/assets/Profile.svg" text="Profil" />
+            <Icon icon="/" src="src/assets/More.svg" text="More" />
             <div className="pt-4">
               <Button className={'button'} type="text" name="Tweet" />
             </div>
@@ -177,10 +177,6 @@ function App() {
           styleName="flex justify-between flex-row border-b "
         />
         <div styleName="flex border-b border-t border-slate-800 ">
-          <Routes>
-            <Route path="/" element={<Tweet />}></Route>
-            <Route path="Profil" element={<TweetProfil />}></Route>{' '}
-          </Routes>
           <div className="flex flex-row">
             <img
               className="mb-10"
@@ -251,24 +247,5 @@ function App() {
     </div>
   );
 }
-
-// const Home = () => {
-//   return (
-//     <div>
-//       <h1>Home</h1>
-//       <Link to="Profil">Profil</Link>
-//     </div>
-//   );
-// };
-
-//  const Profil = () => {
-//   return (
-//     <div>
-//       <h1>Profil</h1>
-//     </div>
-//   );
-// };
-
-//
 
 export default App;
