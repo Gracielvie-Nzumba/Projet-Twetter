@@ -177,10 +177,6 @@ function App() {
           styleName="flex justify-between flex-row border-b "
         />
         <div styleName="flex border-b border-t border-slate-800 ">
-          <Routes>
-            <Route path="/" element={<Tweet />}></Route>
-            <Route path="Profil" element={<TweetProfil />}></Route>{' '}
-          </Routes>
           <div className="flex flex-row">
             <img
               className="mb-10"
@@ -251,24 +247,5 @@ function App() {
     </div>
   );
 }
-
-// const Home = () => {
-//   return (
-//     <div>
-//       <h1>Home</h1>
-//       <Link to="Profil">Profil</Link>
-//     </div>
-//   );
-// };
-
-//  const Profil = () => {
-//   return (
-//     <div>
-//       <h1>Profil</h1>
-//     </div>
-//   );
-// };
-
-//
 
 export default App;
