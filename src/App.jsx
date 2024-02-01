@@ -1,7 +1,6 @@
 import {
   BrowserRouter as Route,
   Routes,
-  Link,
   BrowserRouter,
 } from 'react-router-dom';
 import { useState } from 'react';
@@ -247,5 +246,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;
