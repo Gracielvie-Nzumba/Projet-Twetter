@@ -1,6 +1,7 @@
 import {
   BrowserRouter as Route,
   Routes,
+  Link,
   BrowserRouter,
 } from 'react-router-dom';
 import { useState } from 'react';
@@ -173,7 +174,7 @@ function App() {
         <Header
           title="Home"
           src="src/assets/Timeline-Prop.svg"
-          styleName="flex justify-between flex-row border-b "
+          styleName="flex"
         />
         <div styleName="flex border-b border-t border-slate-800 ">
           <div className="flex flex-row">
@@ -246,6 +247,5 @@ function App() {
     </div>
   );
 }
-
 
 export default App;
