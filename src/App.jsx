@@ -1,4 +1,9 @@
-import { BrowserRouter as Route, Routes, Link } from 'react-router-dom';
+import {
+  BrowserRouter as Route,
+  Routes,
+  Link,
+  BrowserRouter,
+} from 'react-router-dom';
 import { useState } from 'react';
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
@@ -143,17 +148,13 @@ function App() {
               text="Home"
               styleName="display gap-10 flex"
             />
-            <Icon icon="/" src="src/assets/Explore.svg" text="Explore" />
-            <Icon
-              icon="/"
-              src="src/assets/Notifications.svg"
-              text="Notification"
-            />
-            <Icon icon="/" src="src/assets/Messages.svg" text="Message" />
-            <Icon icon="/" src="src/assets/Bookmarks.svg" text="Bookmarks" />
-            <Icon icon="/" src="src/assets/Lists.svg" text="Lists" />
-            <Icon icon="/" src="src/assets/Profile.svg" text="Profil" />
-            <Icon icon="/" src="src/assets/More.svg" text="More" />
+            <Icon src="src/assets/Explore.svg" text="Explore" />
+            <Icon src="src/assets/Notifications.svg" text="Notification" />
+            <Icon src="src/assets/Messages.svg" text="Message" />
+            <Icon src="src/assets/Bookmarks.svg" text="Bookmarks" />
+            <Icon src="src/assets/Lists.svg" text="Lists" />
+            <Icon src="src/assets/Profile.svg" text="Profil" />
+            <Icon src="src/assets/More.svg" text="More" />
             <div className="pt-4">
               <Button className={'button'} type="text" name="Tweet" />
             </div>
@@ -174,7 +175,7 @@ function App() {
         <Header
           title="Home"
           src="src/assets/Timeline-Prop.svg"
-          styleName="flex justify-between flex-row border-b "
+          styleName="flex"
         />
         <div styleName="flex border-b border-t border-slate-800 ">
           <div className="flex flex-row">

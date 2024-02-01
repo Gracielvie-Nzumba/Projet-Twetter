@@ -18,12 +18,12 @@ export default function Tweet({unTweet}) {
 
     <div className="flex gap-4">
       <div>
-        <img src= {unTweet.author_avatar} className="rounded-full w-10 h-10"/>
+        <img src= {unTweet.author_avatar} className="rounded-full"/>
       </div>
-      <div className=" ml-4 mt-4">
-        <div className="flex pb-6">
+      <div className="">
+        <div className="flex pb-6 ml-4">
           <h2 className="font-bold">{unTweet.source}</h2>
-          <img src="src/assets/Verified.svg" alt="" className="w-7 h-7"/>
+          <img src="src/assets/Verified.svg" alt="" className="w-2"/>
         </div>
         <p>{unTweet.text}</p>
         {
@@ -43,25 +43,6 @@ export default function Tweet({unTweet}) {
         </div>
       </div>
     </div>
-
-      {/* <div className="flex gap-4 p-2">
-        <img
-          className="rounded-full w-10 h-10"
-          src="Tweet/Body/pains-cmohamed-hassouna-1024x683.jpg"
-        />
-        <div>
-          <div className="flex">
-            <h2>{array.titre}</h2>
-            <img src="src/assets/Verified.svg" />
-          </div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
-            ipsam quis minima ducimus suscipit natus quia illo nesciunt quos,
-            aliquam eaque accusantium repudiandae, cum sit cumque blanditiis
-            nulla architecto impedit.
-          </p>
-        </div>
-      </div> */}
      </>
   );
 }
