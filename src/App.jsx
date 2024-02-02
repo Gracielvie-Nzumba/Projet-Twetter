@@ -145,9 +145,76 @@ function Home() {
 }
 function Profil() {
   return (
-    <div>
-      
+    <div className="w-5/12">
+      <div className="">
+        <h1>Gracevie Nzumba</h1>
+        <small>0 poste</small>
+      </div>
+      <div className="flex justify-between mt-10">
+        <img
+          src="src/20221008_120444.jpg"
+          className="rounded-full w-20 h-20 "
+        />
+        <button type="button" className="">
+          Edit profile
+        </button>
+      </div>
+      <div>
+        <p>Gracevie Nzumba</p>
+        <small>@gracevie_2020</small>
+      </div>
+      <div className="flex mt-8">
+        <img src="src/assets/Schedule.svg" alt="" />
+        <h2>Joined January 2024</h2>
+      </div>
+      <div className="flex gap-4 mt-4">
+        <div>
+          <span className="">0</span>
+          <span className="ml-2">Following</span>
+        </div>
+        <div>
+          <span>0</span>
+          <span className="ml-2">Following</span>
+        </div>
+      </div>
+      <div className="flex justify-between border-b mt-8">
+        <div>
+          <span>Posts</span>
+        </div>
+        <div>
+          <span>Replies</span>
+        </div>
+        <div>
+          <span>Highlights</span>
+        </div>
+        <div>
+          <span>Media</span>
+        </div>
+        <div>
+          <span>Likes</span>
+        </div>
+      </div>
+      <div>
+        <div>
+          <h1 className="font-bold mt-6">Who to follow</h1>
+        </div>
+        <div className="flex justify-between ">
+          <div className="flex pt-20">
+            <img
+              src="Tweet/Body/pains-cmohamed-hassouna-1024x683.jpg"
+              className="rounded-full w-10 h-10"
+              alt=""
+            />
+            <div>
+              <h4 className="pt-2 ml-2">GloDi Kalombo</h4>
+              <small>@Master-GK</small>
+            </div>
+          </div>
+          <button type="submit" className="">
+            Follow
+          </button>
+        </div>
+      </div>
     </div>
-  )
- 
+  );
 }
