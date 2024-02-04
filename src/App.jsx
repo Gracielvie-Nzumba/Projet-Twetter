@@ -5,7 +5,7 @@ import viteLogo from '/vite.svg';
 import './App.css';
 import Header from './Header';
 import Input_Tweet from './Input_Tweet';
-import Icon from './Icon';
+import Icon from './Incon';
 import Button from './Button';
 import Tweet from './Tweet';
 import MyIcon from './MyIcon';
